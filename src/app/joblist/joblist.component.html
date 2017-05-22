@@ -1,3 +1,15 @@
-<p>
-  joblist works!
-</p>
+<div class="row text-center">
+  <div class="col-sm-5" *ngFor="let j of listOfJobs" id="eachCard">
+    <div class="card">
+      <div class="card-block">
+        <h3 class="card-title">{{j.companyName}}</h3>
+        <p class="card-text">
+          Title: {{j.title}}<br>
+          {{j.description}}<br>
+          City: {{j.city}}<br>
+          Salary: {{j.salary}}<br></p>          
+        <a (click)="onClick(j)" class="btn btn-primary">View</a>
+      </div>
+    </div>
+  </div>
+</div>

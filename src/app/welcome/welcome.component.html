@@ -1,3 +1,14 @@
-<p>
-  welcome works!
-</p>
+<div class="container theme-showcase">
+	<div class="jumbotron">
+		<h1>Login With Username only</h1>
+		<p>Testing version 1.0</p>
+		<div>
+			<div class="input-group input-group-lg">
+				<span class="input-group-addon" id="sizing-addon1">U</span>
+  				<input type="text" class="form-control" placeholder="username" [(ngModel)]="username">
+			</div>
+			<br>
+			<button (click)="onClick()" class="btn btn-default" type="button">Login</button>
+		</div>
+	</div>
+</div>
