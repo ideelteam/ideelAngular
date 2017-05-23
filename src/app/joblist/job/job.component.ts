@@ -25,6 +25,7 @@ export class JobComponent implements OnInit {
     this.appService$.getOneJobs(this.jobID)
     .subscribe(
       result => {
+        console.log(result);
         this.jobInfo = result;
         console.log(JSON.stringify(this.jobInfo));
       },
